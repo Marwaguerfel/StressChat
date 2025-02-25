@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mental Wellness Support Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-theme="light">
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <div class="icon-wrapper">
+                    <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Assistant Avatar">
+                </div>
+                <h2>Mental Wellness Assistant</h2>
+                <p>Here to support you 24/7</p>
+            </div>
+
+            <div class="stress-dashboard">
+                <h3>Stress Analysis</h3>
+                <div class="stress-meter">
+                    <div class="stress-level" id="stress-level-indicator"></div>
+                </div>
+                <p id="stress-level-text">Current stress level: Not analyzed</p>
+            </div>
+
+            <div class="dashboard-controls">
+                <button id="theme-toggle" class="control-button">
+                    <i class="fas fa-moon"></i>
+                    Toggle Theme
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="status">
+                    <div class="status-indicator"></div>
+                    <span>Online</span>
+                </div>
+                <div class="header-controls">
+                    <button onclick="showSummary()" class="control-button">
+                        <i class="fas fa-list"></i>
+                        Summary
+                    </button>
+                    <button onclick="generateExercise()" class="control-button">
+                        <i class="fas fa-dumbbell"></i>
+                        Generate Exercise
+                    </button>
+                    <button onclick="exportPDF()" class="control-button" id="export-pdf-btn">
+                        <i class="fas fa-file-pdf"></i>
+                        Export PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-bubble">
+                        Hello! I'm your wellness assistant. How are you feeling today?
+                    </div>
+                    <div class="message-meta">Wellness Assistant</div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Type your message here...">
+                </div>
+                <button id="send-button" class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Summary and Exercise -->
+    <div id="summary-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Chat Summary</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <div id="summary-content"></div>
+            <div id="exercise-content" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

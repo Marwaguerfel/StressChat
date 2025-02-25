@@ -1,0 +1,5 @@
+# Ignorer le fichier contenant les clés API
+key.py
+
+# Ignorer le modèle pour Git
+best_model.pt
