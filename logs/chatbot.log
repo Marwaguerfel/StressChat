@@ -1,153 +1,147 @@
-2025-02-20 13:26:00,968 INFO: Chatbot startup
-2025-02-20 13:32:21,030 INFO: Chatbot startup
-2025-02-20 13:32:36,875 INFO: Chatbot startup
-2025-02-20 13:59:48,050 INFO: Chatbot startup
-2025-02-20 14:09:23,877 INFO: Chatbot startup
-2025-02-20 14:09:43,188 INFO: Chatbot startup
-2025-02-22 09:27:33,258 INFO: Chatbot startup
-2025-02-22 09:27:58,480 INFO: Chatbot startup
-2025-02-22 10:00:11,446 INFO: Chatbot startup
-2025-02-22 10:00:34,463 INFO: Chatbot startup
-2025-02-22 10:01:51,451 INFO: Chatbot startup
-2025-02-22 10:37:48,389 INFO: Chatbot startup
-2025-02-22 10:38:18,766 INFO: Chatbot startup
-2025-02-22 12:28:00,145 INFO: Chatbot startup
-2025-02-22 12:33:03,972 INFO: Chatbot startup
-2025-02-22 12:38:20,725 INFO: Chatbot startup
-2025-02-22 16:00:23,351 INFO: Chatbot startup
-2025-02-22 16:00:54,126 INFO: Chatbot startup
-2025-02-23 15:12:42,590 INFO: Chatbot startup
-2025-02-23 15:13:13,910 INFO: Chatbot startup
-2025-02-23 15:54:12,378 INFO: Chatbot startup
-2025-02-23 16:12:37,849 INFO: Chatbot startup
-2025-02-23 16:13:04,439 INFO: Chatbot startup
-2025-02-23 16:58:55,655 INFO: Chatbot startup
-2025-02-23 17:45:04,279 INFO: Chatbot startup
-2025-02-23 18:03:22,307 INFO: Chatbot startup
-2025-02-23 18:06:19,259 INFO: Chatbot startup
-2025-02-23 18:06:47,082 INFO: Chatbot startup
-2025-02-23 18:10:25,182 INFO: Chatbot startup
-2025-02-23 18:15:07,625 INFO: Chatbot startup
-2025-02-23 18:15:30,315 INFO: Chatbot startup
-2025-02-23 18:38:45,091 INFO: Chatbot startup
-2025-02-23 18:39:11,515 INFO: Chatbot startup
-2025-02-23 18:41:19,017 INFO: Chatbot startup
-2025-02-23 18:52:28,140 INFO: Chatbot startup
-2025-02-23 18:52:50,896 INFO: Chatbot startup
-2025-02-23 18:59:38,157 INFO: Chatbot startup
-2025-02-23 19:00:12,587 INFO: Chatbot startup
-2025-02-23 19:05:07,479 INFO: Chatbot startup
-2025-02-23 19:09:02,530 INFO: Chatbot startup
-2025-02-23 19:11:05,415 INFO: Chatbot startup
-2025-02-23 19:11:33,016 INFO: Chatbot startup
-2025-02-23 19:19:45,870 INFO: Chatbot startup
-2025-02-23 19:20:12,944 INFO: Chatbot startup
-2025-02-23 21:06:22,433 INFO: Chatbot startup
-2025-02-23 21:06:50,237 INFO: Chatbot startup
-2025-02-23 21:08:24,395 INFO: Chatbot startup
-2025-02-23 21:09:45,447 INFO: Chatbot startup
-2025-02-23 21:10:19,774 INFO: Chatbot startup
-2025-02-23 21:11:17,078 INFO: Chatbot startup
-2025-02-23 21:11:56,069 INFO: Chatbot startup
-2025-02-23 21:51:55,142 INFO: Chatbot startup
-2025-02-23 22:02:58,841 INFO: Chatbot startup
-2025-02-23 22:50:11,142 INFO: Chatbot startup
-2025-02-24 09:05:49,641 INFO: Chatbot startup
-2025-02-24 09:06:21,458 INFO: Chatbot startup
-2025-02-24 09:07:29,043 INFO: Application startup
-2025-02-24 09:13:44,075 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:46,302 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:50,487 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:51,366 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:53,401 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:53,573 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:53,832 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:13:55,629 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:15:23,101 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:17:10,146 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:18:28,890 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:22:08,824 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:32:48,266 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:32:49,660 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:32:51,363 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:32:52,421 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:41:43,788 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:47:35,838 INFO: Application startup
-2025-02-24 09:49:45,538 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:50:52,117 INFO: Application startup
-2025-02-24 09:57:58,991 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 09:57:59,617 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 10:01:44,828 INFO: Application startup
-2025-02-24 10:02:38,696 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 10:04:54,064 INFO: Application startup
-2025-02-24 10:05:54,237 ERROR: Exercise generation error: An asyncio.Future, a coroutine or an awaitable is required
-2025-02-24 10:08:27,385 INFO: Application startup
-2025-02-24 10:12:24,404 INFO: Application startup
-2025-02-24 10:12:55,244 INFO: Application startup
-2025-02-24 10:13:44,993 ERROR: Exercise generation error: Object of type coroutine is not JSON serializable
-2025-02-24 10:15:03,320 INFO: Application startup
-2025-02-24 10:16:08,634 INFO: Application startup
-2025-02-24 10:17:46,308 ERROR: Exercise generation error: Object of type ObjectId is not JSON serializable
-2025-02-24 10:28:20,377 INFO: Application startup
-2025-02-24 10:54:07,162 INFO: Application startup
-2025-02-24 10:54:54,372 INFO: Application startup
-2025-02-24 11:17:52,865 INFO: Application startup
-2025-02-24 11:18:29,190 INFO: Application startup
-2025-02-24 11:20:05,263 INFO: Application startup
-2025-02-24 11:22:58,499 INFO: Application startup
-2025-02-24 12:03:50,332 INFO: Application startup
-2025-02-24 12:10:28,077 INFO: Application startup
-2025-02-24 12:16:17,404 INFO: Application startup
-2025-02-24 13:16:07,436 INFO: Application startup
-2025-02-24 13:18:04,691 INFO: Application startup
-2025-02-24 13:24:31,961 ERROR: Exercise generation error: Object of type ObjectId is not JSON serializable
-2025-02-24 13:30:36,699 INFO: Application startup
-2025-02-24 13:33:41,485 INFO: Application startup
-2025-02-24 13:34:22,788 INFO: Application startup
-2025-02-24 13:35:03,852 INFO: Application startup
-2025-02-24 13:48:45,587 INFO: Application startup
-2025-02-24 13:49:16,501 INFO: Application startup
-2025-02-24 14:19:59,459 INFO: Application startup
-2025-02-24 14:20:36,189 INFO: Application startup
-2025-02-24 14:24:50,296 INFO: Generating exercise with RAG method, stress level: 0
-2025-02-24 14:25:04,187 INFO: Generated RAG exercise: Deep Breathing for Stress Relief
-2025-02-24 14:25:04,188 ERROR: Exercise generation error: Object of type ObjectId is not JSON serializable
-2025-02-24 14:29:45,912 INFO: Generating exercise with RAG method, stress level: 0
-2025-02-24 14:29:58,378 INFO: Generated RAG exercise: 5 Minute Breathing Space
-2025-02-24 14:29:58,379 ERROR: Exercise generation error: Object of type ObjectId is not JSON serializable
-2025-02-24 14:33:42,955 INFO: Application startup
-2025-02-24 14:34:25,608 INFO: Application startup
-2025-02-24 14:38:08,799 INFO: Application startup
-2025-02-24 14:38:41,967 INFO: Application startup
-2025-02-24 14:40:32,212 INFO: Generating exercise with RAG method, stress level: 0
-2025-02-24 14:40:32,212 ERROR: Exercise generation error: 'coroutine' object has no attribute 'get'
-2025-02-24 14:41:06,570 INFO: Application startup
-2025-02-24 14:41:17,998 INFO: Generating exercise with RAG method, stress level: 1
-2025-02-24 14:41:17,998 ERROR: Exercise generation error: 'coroutine' object has no attribute 'get'
-2025-02-24 14:42:50,462 INFO: Application startup
-2025-02-24 14:43:04,051 INFO: Generating exercise with RAG method, stress level: 1
-2025-02-24 14:43:20,176 INFO: Generated RAG exercise: Deep Breathing for Stress Relief
-2025-02-24 14:51:12,211 INFO: Application startup
-2025-02-24 14:51:42,388 INFO: Application startup
-2025-02-24 14:53:51,360 INFO: Generating exercise with RAG method, stress level: 0
-2025-02-24 14:54:04,029 INFO: Generated RAG exercise: 5-Minute Breathing Space
-2025-02-24 14:55:42,440 INFO: Application startup
-2025-02-24 14:59:45,815 INFO: Application startup
-2025-02-24 14:59:53,221 INFO: Generating exercise with traditional method, stress level: 0
-2025-02-24 15:00:05,301 INFO: Generated traditional exercise: Emotional Check-in Journaling Exercise
-2025-02-24 15:00:18,956 ERROR: PDF export error: name 'Image' is not defined
-2025-02-24 15:01:03,891 INFO: Application startup
-2025-02-24 15:57:57,472 INFO: Application startup
-2025-02-24 15:58:32,146 INFO: Application startup
-2025-02-24 21:10:26,971 INFO: Generating exercise with traditional method, stress level: 1
-2025-02-24 21:10:47,721 INFO: Generated traditional exercise: Stress Relief through Progressive Relaxation
-2025-02-24 21:34:13,591 ERROR: PDF export error: 'dict' object has no attribute 'split'
-2025-02-24 21:37:53,108 INFO: Application startup
-2025-02-24 21:38:59,578 INFO: Application startup
-2025-02-24 21:39:04,828 INFO: Generating exercise with traditional method, stress level: 0
-2025-02-24 21:39:16,607 INFO: Generated traditional exercise: Maintaining Positivity Journaling Exercise
-2025-02-24 21:44:01,026 INFO: Application startup
-2025-02-24 21:47:34,391 INFO: Application startup
-2025-02-24 21:47:57,905 ERROR: PDF export error: cannot access local variable 'colors' where it is not associated with a value
-2025-02-24 21:49:07,072 INFO: Application startup
-2025-02-25 09:03:51,725 INFO: Application startup
+2025-03-08 10:47:39,205 INFO: Application startup
+2025-03-08 10:48:18,518 INFO: Application startup
+2025-03-08 10:49:12,518 INFO: Received detect-emotion request: True
+2025-03-08 10:49:12,522 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:49:12,544 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:49:13,212 INFO: Received detect-emotion request: True
+2025-03-08 10:49:13,214 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:49:13,216 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:49:14,525 INFO: Received detect-emotion request: True
+2025-03-08 10:49:14,525 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:49:14,526 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:49:14,572 INFO: Received detect-emotion request: True
+2025-03-08 10:49:14,573 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:49:14,574 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:49:15,516 INFO: Received detect-emotion request: True
+2025-03-08 10:49:15,518 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:49:15,519 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:49:16,043 INFO: Found 1 faces in image
+2025-03-08 10:49:16,043 INFO: Found 1 faces in image
+2025-03-08 10:49:16,043 INFO: Found 1 faces in image
+2025-03-08 10:49:16,043 INFO: Found 1 faces in image
+2025-03-08 10:49:16,043 INFO: Found 1 faces in image
+2025-03-08 10:49:16,280 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'
+2025-03-08 10:49:16,281 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'
+2025-03-08 10:49:16,282 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'
+2025-03-08 10:49:16,290 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'
+2025-03-08 10:49:16,319 ERROR: Traceback (most recent call last):
+  File "c:\Users\marwa\OneDrive\Desktop\StressDetection\app.py", line 171, in detect_emotion_from_image
+    results = emotion_model.predict(source=target_img, verbose=True, conf=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\model.py", line 553, in predict
+    self.predictor.setup_model(model=self.model, verbose=is_cli)
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\predictor.py", line 310, in setup_model
+    self.model = AutoBackend(
+                 ^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\autobackend.py", line 152, in __init__
+    model = model.fuse(verbose=verbose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\tasks.py", line 207, in fuse
+    delattr(m, "bn")  # remove batchnorm
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1799, in __delattr__
+    super().__delattr__(name)
+AttributeError: 'Conv' object has no attribute 'bn'
+
+2025-03-08 10:49:16,320 ERROR: Traceback (most recent call last):
+  File "c:\Users\marwa\OneDrive\Desktop\StressDetection\app.py", line 171, in detect_emotion_from_image
+    results = emotion_model.predict(source=target_img, verbose=True, conf=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\model.py", line 553, in predict
+    self.predictor.setup_model(model=self.model, verbose=is_cli)
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\predictor.py", line 310, in setup_model
+    self.model = AutoBackend(
+                 ^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\autobackend.py", line 152, in __init__
+    model = model.fuse(verbose=verbose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\tasks.py", line 207, in fuse
+    delattr(m, "bn")  # remove batchnorm
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1799, in __delattr__
+    super().__delattr__(name)
+AttributeError: 'Conv' object has no attribute 'bn'
+
+2025-03-08 10:49:16,324 ERROR: Traceback (most recent call last):
+  File "c:\Users\marwa\OneDrive\Desktop\StressDetection\app.py", line 171, in detect_emotion_from_image
+    results = emotion_model.predict(source=target_img, verbose=True, conf=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\model.py", line 553, in predict
+    self.predictor.setup_model(model=self.model, verbose=is_cli)
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\predictor.py", line 310, in setup_model
+    self.model = AutoBackend(
+                 ^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\autobackend.py", line 152, in __init__
+    model = model.fuse(verbose=verbose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\tasks.py", line 207, in fuse
+    delattr(m, "bn")  # remove batchnorm
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1799, in __delattr__
+    super().__delattr__(name)
+AttributeError: 'Conv' object has no attribute 'bn'
+
+2025-03-08 10:49:16,352 ERROR: Traceback (most recent call last):
+  File "c:\Users\marwa\OneDrive\Desktop\StressDetection\app.py", line 171, in detect_emotion_from_image
+    results = emotion_model.predict(source=target_img, verbose=True, conf=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\model.py", line 553, in predict
+    self.predictor.setup_model(model=self.model, verbose=is_cli)
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\engine\predictor.py", line 310, in setup_model
+    self.model = AutoBackend(
+                 ^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\autobackend.py", line 152, in __init__
+    model = model.fuse(verbose=verbose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\ultralytics\nn\tasks.py", line 207, in fuse
+    delattr(m, "bn")  # remove batchnorm
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\marwa\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1799, in __delattr__
+    super().__delattr__(name)
+AttributeError: 'Conv' object has no attribute 'bn'
+
+2025-03-08 10:49:17,235 INFO: Detection results: 1
+2025-03-08 10:49:17,235 INFO: Found 1 detections
+2025-03-08 10:49:17,236 INFO: Class indices: [          0], Confidences: [    0.91853]
+2025-03-08 10:49:17,237 INFO: Top class: 0.0, Labels: {0: 'angry', 1: 'disgust', 2: 'fear', 3: 'happy', 4: 'neutral', 5: 'sad', 6: 'surprise'}
+2025-03-08 10:49:17,238 INFO: Detected emotion: angry with confidence 0.9185341000556946
+2025-03-08 10:50:05,978 INFO: Application startup
+2025-03-08 10:50:06,105 INFO: Received detect-emotion request: True
+2025-03-08 10:50:06,106 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:50:06,108 INFO: Received detect-emotion request: True
+2025-03-08 10:50:06,113 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:50:06,114 INFO: Received detect-emotion request: True
+2025-03-08 10:50:06,115 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:50:06,118 INFO: Received detect-emotion request: True
+2025-03-08 10:50:06,118 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:50:06,120 INFO: Received detect-emotion request: True
+2025-03-08 10:50:06,121 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:50:06,123 INFO: Received detect-emotion request: True
+2025-03-08 10:50:06,123 INFO: Image data type: <class 'str'>, starts with: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD
+2025-03-08 10:50:06,128 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:50:06,128 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:50:06,128 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:50:06,128 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:50:06,128 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:50:06,128 INFO: Image shape: (240, 320, 3)
+2025-03-08 10:50:09,057 INFO: Found 1 faces in image
+2025-03-08 10:50:09,057 INFO: Found 1 faces in image
+2025-03-08 10:50:09,057 INFO: Found 1 faces in image
+2025-03-08 10:50:09,057 INFO: Found 1 faces in image
+2025-03-08 10:50:09,057 INFO: Found 1 faces in image
+2025-03-08 10:50:09,057 INFO: Found 1 faces in image
+2025-03-08 10:50:09,305 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'
+2025-03-08 10:50:09,305 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'
+2025-03-08 10:50:09,305 ERROR: Emotion detection error: 'Conv' object has no attribute 'bn'

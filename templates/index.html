@@ -16,53 +16,94 @@
                 <div class="icon-wrapper">
                     <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Assistant Avatar">
                 </div>
-                <h2>Mental Wellness Assistant</h2>
-                <p>Here to support you 24/7</p>
+                <h2 data-i18n="title">Mental Wellness Assistant</h2>
+                <p data-i18n="subtitle">Here to support you 24/7</p>
             </div>
 
+            <!-- New language settings section -->
+            <div class="language-settings">
+                <h3 data-i18n="language_settings">Language Settings</h3>
+                <div id="language-container"></div>
+            </div>
+
+            <!-- Stress Analysis Dashboard -->
             <div class="stress-dashboard">
-                <h3>Stress Analysis</h3>
+                <h3 data-i18n="stress_analysis">Stress Analysis</h3>
                 <div class="stress-meter">
                     <div class="stress-level" id="stress-level-indicator"></div>
                 </div>
-                <p id="stress-level-text">Current stress level: Not analyzed</p>
+                <p id="stress-level-text" data-i18n="current_stress">Current stress level: Not analyzed</p>
+            </div>
+
+            <!-- New Emotion Analysis Dashboard -->
+            <div class="emotion-dashboard">
+                <h3 data-i18n="emotion_analysis">Emotion Analysis</h3>
+                <div class="emotion-display">
+                    <div id="emotion-icon"><i class="fas fa-smile"></i></div>
+                    <p id="emotion-text" data-i18n="current_emotion">Detected emotion: Not analyzed</p>
+                </div>
+                <div class="emotion-camera-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="enable-camera">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span data-i18n="enable_camera">Enable Camera for Emotion Detection</span>
+                </div>
             </div>
 
             <div class="dashboard-controls">
-                <button id="theme-toggle" class="control-button">
+                <button id="theme-toggle" class="control-button" data-i18n="toggle_theme">
                     <i class="fas fa-moon"></i>
                     Toggle Theme
                 </button>
-
             </div>
         </div>
 
         <!-- Chat Container -->
         <div class="chat-container">
+            <!-- For mobile view only -->
+            <div class="mobile-language-selector" style="display: none;">
+                <select id="mobile-language-select" class="language-select"></select>
+            </div>
+            
             <div class="chat-header">
                 <div class="status">
                     <div class="status-indicator"></div>
                     <span>Online</span>
                 </div>
                 <div class="header-controls">
-                    <button onclick="showSummary()" class="control-button">
+                    <button onclick="showSummary()" class="control-button" data-i18n="summary">
                         <i class="fas fa-list"></i>
                         Summary
                     </button>
-                    <button onclick="generateExercise()" class="control-button">
+                    <button onclick="generateExercise()" class="control-button" data-i18n="generate_exercise">
                         <i class="fas fa-dumbbell"></i>
                         Generate Exercise
                     </button>
-                    <button onclick="exportPDF()" class="control-button" id="export-pdf-btn">
+                    <button onclick="exportPDF()" class="control-button" id="export-pdf-btn" data-i18n="export_pdf">
                         <i class="fas fa-file-pdf"></i>
                         Export PDF
                     </button>
                 </div>
             </div>
 
+            <!-- Video container for emotion detection -->
+            <div id="video-container" class="hidden">
+                <video id="webcam" autoplay playsinline muted></video>
+                <div class="emotion-preview">
+                    <span id="live-emotion">Processing...</span>
+                    <button id="capture-emotion" class="control-button">
+                        <i class="fas fa-camera"></i> Capture
+                    </button>
+                    <button id="close-webcam" class="control-button">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+            </div>
+
             <div class="chat-messages" id="chat-messages">
                 <div class="message bot-message">
-                    <div class="message-bubble">
+                    <div class="message-bubble" data-i18n="first_message">
                         Hello! I'm your wellness assistant. How are you feeling today?
                     </div>
                     <div class="message-meta">Wellness Assistant</div>
@@ -71,12 +112,26 @@
 
             <div class="chat-input">
                 <div class="input-container">
-                    <input type="text" id="user-input" placeholder="Type your message here...">
+                    <input type="text" id="user-input" placeholder="Type your message here..." data-i18n-placeholder="type_message">
+                    <button id="voice-button" class="voice-button" title="Voice Input">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <!-- New emotion capture button -->
+                    <button id="emotion-button" class="emotion-button" title="Emotion Capture">
+                        <i class="fas fa-camera"></i>
+                    </button>
                 </div>
-                <button id="send-button" class="send-button">
+                <button id="send-button" class="send-button" data-i18n="send">
                     <i class="fas fa-paper-plane"></i>
                     Send
                 </button>
+                <!-- Add a listening indicator (optional) -->
+                <div id="listening-indicator" class="listening-indicator hidden">
+                    <span class="listening-dot"></span>
+                    <span class="listening-dot"></span>
+                    <span class="listening-dot"></span>
+                    Listening...
+                </div>
             </div>
         </div>
     </div>
@@ -93,6 +148,38 @@
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Language Settings Modal -->
+    <div id="language-settings-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Language Settings</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="language-settings-content">
+                <div class="setting-group">
+                    <h3>Choose Your Language</h3>
+                    <div id="full-language-container"></div>
+                </div>
+                
+                <div class="setting-group">
+                    <h3>Translation Options</h3>
+                    <label class="setting-option">
+                        <input type="checkbox" id="auto-detect-language" checked>
+                        Automatically detect message language
+                    </label>
+                </div>
+                
+                <div class="setting-info">
+                    <p>Translation is powered by Hugging Face AI models. Quality may vary by language.</p>
+                    <p>Your conversations are always processed in English on our server for the best mental wellness support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import the translation service script before main.js -->
+    <script type="module" src="{{ url_for('static', filename='js/translation-service.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/emotion-detection.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>

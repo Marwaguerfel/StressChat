@@ -1,32 +1,88 @@
-/* Variables */
+/* Add this to the top of your style.css file */
+
+/* Import Gilroy font */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+         url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+         url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+         url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+         url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('otf'),
+         url('../fonts/Gilroy-ExtraBold.otf') format('otf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variables - Update colors and font-family */
 :root {
-    --primary-color: #6366f1;
-    --primary-light: #818cf8;
-    --primary-dark: #4f46e5;
-    --secondary-color: #f8fafc;
-    --success-color: #22c55e;
-    --warning-color: #f59e0b;
-    --danger-color: #ef4444;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
-    --border-color: #e2e8f0;
-    --shadow-color: rgba(0,0,0,0.1);
-    --background-gradient: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    /* New color palette */
+    --primary-color: #3f3c64;     /* Deep Purple */
+    --primary-light: #6ec1e4;     /* Light Blue */
+    --primary-dark: #3a98f5;      /* Bright Blue */
+    --secondary-color: #f5f1ed;   /* Off-White */
+    --accent-color: #20aa96;      /* Teal */
+    --accent-secondary: #00e9b8;  /* Mint Green */
+    --accent-tertiary: #bb74f0;   /* Purple */
+    --success-color: #20aa96;     /* Teal */
+    --warning-color: #bb74f0;     /* Purple */
+    --danger-color: #ef4444;      /* Red - keeping this for error states */
+    --text-primary: #3f3c64;      /* Deep Purple */
+    --text-secondary: #696969;    /* Dark Gray */
+    --border-color: #e2e8f0;      /* Light Gray - keeping for subtle borders */
+    --shadow-color: rgba(63, 60, 100, 0.1); /* Based on primary color */
+    --background-gradient: linear-gradient(135deg, #f5f1ed 0%, #ffffff 100%);
     --card-shadow: 0 4px 6px var(--shadow-color);
     --transition-speed: 0.3s;
+    --font-primary: 'Gilroy', sans-serif;
 }
 
 /* Dark Theme Variables */
 [data-theme="dark"] {
-    --primary-color: #818cf8;
-    --primary-light: #93c5fd;
-    --primary-dark: #6366f1;
-    --secondary-color: #1e293b;
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --border-color: #334155;
-    --shadow-color: rgba(0,0,0,0.3);
-    --background-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --primary-color: #3a98f5;     /* Bright Blue */
+    --primary-light: #6ec1e4;     /* Light Blue */
+    --primary-dark: #3f3c64;      /* Deep Purple */
+    --secondary-color: #2a2a3c;   /* Dark version of Deep Purple */
+    --accent-color: #20aa96;      /* Teal */
+    --accent-secondary: #00e9b8;  /* Mint Green */
+    --accent-tertiary: #bb74f0;   /* Purple */
+    --text-primary: #f5f1ed;      /* Off-White */
+    --text-secondary: #bebebe;    /* Light Gray */
+    --border-color: #4a4a69;      /* Muted version of primary */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --background-gradient: linear-gradient(135deg, #282834 0%, #3f3c64 100%);
 }
 
 /* Reset & Base Styles */
@@ -34,7 +90,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
 }
 
 body {
@@ -43,6 +99,22 @@ body {
     line-height: 1.6;
     min-height: 100vh;
     transition: background-color var(--transition-speed);
+}
+
+/* Typography specific styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 800; /* ExtraBold for headings */
+    color: var(--primary-color);
+}
+
+h1, h2 {
+    letter-spacing: -0.02em;
+}
+
+p, input, button, textarea, select, .message-bubble {
+    font-family: var(--font-primary);
+    font-weight: 400; /* Regular for most text */
 }
 
 /* Layout */
@@ -77,6 +149,19 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+.profile-section h2 {
+    font-weight: 800; /* ExtraBold for the app title */
+    font-size: 1.5rem;
+    margin: 8px 0 4px;
+    color: var(--primary-color);
+}
+
+.profile-section p {
+    font-weight: 300; /* Light for the subtitle */
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
 .icon-wrapper {
     width: 96px;
     height: 96px;
@@ -84,7 +169,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--card-shadow);
-    border: 3px solid var(--primary-light);
+    border: 3px solid var(--accent-color);
     padding: 2px;
 }
 
@@ -97,9 +182,17 @@ body {
 
 /* Stress Dashboard */
 .stress-dashboard {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(63, 60, 100, 0.05);
     border-radius: 12px;
     padding: 20px;
+}
+
+.stress-dashboard h3, 
+.language-settings h3 {
+    font-weight: 700; /* Bold for section titles */
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
 }
 
 .stress-meter {
@@ -113,8 +206,66 @@ body {
 .stress-level {
     height: 100%;
     width: 0;
-    background: var(--primary-color);
+    background: var(--accent-color);
     transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* Language Settings Section */
+.language-settings {
+    background: rgba(63, 60, 100, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Language Selector Styles */
+.language-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.language-select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.language-options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    background-color: rgba(63, 60, 100, 0.03);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.language-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.language-options label:hover {
+    color: var(--text-primary);
+}
+
+.language-options input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent-color);
 }
 
 /* Chat Container */
@@ -160,6 +311,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: white;
+}
+
+[data-theme="dark"] .chat-messages {
+    background-color: #2a2a3c;
 }
 
 .message {
@@ -185,14 +341,51 @@ body {
 }
 
 .user-message .message-bubble {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: white;
 }
 
 .message-meta {
+    font-weight: 300; /* Light for message metadata */
     font-size: 0.8rem;
     color: var(--text-secondary);
     margin: 0 8px;
+}
+
+/* Translation Notes */
+.translation-note {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    margin: 4px 0;
+    font-style: italic;
+    max-width: 80%;
+    align-self: flex-start;
+    animation: fadeIn 0.3s ease;
+}
+
+.toggle-translation-btn {
+    background: none;
+    border: none;
+    color: var(--primary-dark);
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 4px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.toggle-translation-btn:hover {
+    color: var(--accent-color);
+}
+
+/* Language Indicator in Messages */
+.language-indicator {
+    margin-left: 8px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
 }
 
 /* Input Area */
@@ -221,10 +414,15 @@ body {
     transition: all 0.2s ease;
 }
 
+[data-theme="dark"] .chat-input input {
+    background: #343450;
+    color: var(--text-primary);
+}
+
 .chat-input input:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(32, 170, 150, 0.2);
 }
 
 /* Buttons */
@@ -243,14 +441,14 @@ body {
 }
 
 .control-button:hover {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: white;
-    border-color: var(--primary-color);
+    border-color: var(--accent-color);
     transform: translateY(-1px);
 }
 
 .send-button {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -259,7 +457,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-weight: 500;
+    font-weight: 700; /* Bold for the send button */
     transition: all 0.2s ease;
 }
 
@@ -268,28 +466,19 @@ body {
     transform: translateY(-1px);
 }
 
-/* Quick Actions */
-.quick-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.quick-action-btn {
-    background: transparent;
-    border: 1px solid var(--border-color);
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    transition: all 0.2s ease;
-}
-
-.quick-action-btn:hover {
-    background: var(--primary-color);
+/* Language Badge */
+.language-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
     color: white;
-    border-color: var(--primary-color);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 8px;
+    text-transform: uppercase;
 }
 
 /* Modal */
@@ -330,43 +519,44 @@ body {
     color: var(--text-secondary);
 }
 
-/* Animations */
-@keyframes messageIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.close-button:hover {
+    color: var(--primary-color);
 }
 
-/* Responsiveness */
-@media (max-width: 1024px) {
-    .container {
-        grid-template-columns: 280px 1fr;
-        padding: 16px;
-    }
+.language-button {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    padding: 6px 10px;
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
 }
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+.language-button:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
 
-    .sidebar {
-        display: none;
-    }
+.language-button .language-code {
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-    .chat-container {
-        height: calc(100vh - 32px);
-    }
+/* Exercise related styles */
+.exercise-message .exercise-bubble {
+    background-color: rgba(32, 170, 150, 0.1);
+    border-left: 4px solid var(--accent-color);
 }
 
 .exercise-container {
     padding: 20px;
-    background: var(--bg-color);
+    background: var(--secondary-color);
     border-radius: 10px;
 }
 
@@ -384,68 +574,24 @@ body {
     font-size: 0.9em;
 }
 
-.instruction-list, .benefits-list {
-    margin: 10px 0;
-    padding-left: 20px;
-}
+/* Update category badges with new colors */
+.meditation { background-color: var(--primary-dark); }
+.breathing { background-color: var(--accent-color); }
+.journaling { background-color: var(--accent-tertiary); }
+.social { background-color: var(--primary-dark); }
+.mindfulness { background-color: var(--accent-secondary); }
+.emotional_regulation { background-color: var(--primary-color); }
+.cbt { background-color: var(--accent-tertiary); }
+.gratitude { background-color: var(--accent-color); }
 
-.instruction-item, .benefit-item {
-    margin: 8px 0;
-    line-height: 1.4;
-}
+/* Update difficulty badges */
+.beginner { background-color: var(--accent-secondary); }
+.intermediate { background-color: var(--accent-color); }
+.advanced { background-color: var(--primary-color); }
 
-.tag-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-}
-
-.tag {
-    background: var(--primary-color);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.85em;
-}
-
-/* Category badges */
-.meditation { background-color: #4A90E2; }
-.breathing { background-color: #45B7AF; }
-.journaling { background-color: #9B59B6; }
-.social { background-color: #3498DB; }
-.mindfulness { background-color: #2ECC71; }
-.emotional_regulation { background-color: #E74C3C; }
-.cbt { background-color: #F39C12; }
-.gratitude { background-color: #1ABC9C; }
-
-/* Difficulty badges */
-.beginner { background-color: #2ECC71; }
-.intermediate { background-color: #F39C12; }
-.advanced { background-color: #E74C3C; }
-
-/* Summary section styling */
-.summary-section {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-/* Exercise section headings */
-.exercise-section h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.exercise-section h4 {
-    margin: 20px 0 10px;
-    color: var(--text-color);
-}
-/* Ajoutez ces styles à la fin de votre fichier style.css */
-
-/* Badge pour exercices personnalisés */
+/* Personalized badge */
 .personalized-badge {
-    background-color: var(--primary-color);
+    background-color: var(--accent-tertiary);
     color: white;
     padding: 4px 8px;
     border-radius: 4px;
@@ -453,79 +599,7 @@ body {
     margin-left: 10px;
 }
 
-/* Badges de méthode */
-.method-badge {
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: white;
-    font-size: 0.9em;
-}
-
-.method-badge.rag {
-    background-color: #9C27B0; /* Violet */
-}
-
-.method-badge.traditional {
-    background-color: #607D8B; /* Bleu gris */
-}
-
-/* Bouton de bascule de méthode */
-.toggle-method-btn {
-    margin-top: 20px;
-    padding: 8px 16px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: all 0.2s ease;
-}
-
-.toggle-method-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-/* Style spécial pour les messages d'exercice dans le chat */
-.exercise-message .exercise-bubble {
-    background-color: rgba(99, 102, 241, 0.1);
-    border-left: 4px solid var(--primary-color);
-}
-
-.exercise-message-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.exercise-message-content h3 {
-    margin: 0;
-    color: var(--primary-color);
-}
-
-.exercise-meta {
-    font-size: 0.85em;
-    color: var(--text-secondary);
-}
-
-.view-details-btn {
-    align-self: flex-start;
-    margin-top: 10px;
-    padding: 6px 12px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9em;
-    transition: background-color 0.2s ease;
-}
-
-.view-details-btn:hover {
-    background-color: var(--primary-dark);
-}
-
-/* Indicateur de génération */
+/* Typing indicator animation */
 .typing-indicator {
     display: flex;
     align-items: center;
@@ -538,7 +612,7 @@ body {
 .typing-indicator span {
     width: 8px;
     height: 8px;
-    background: var(--primary-color);
+    background: var(--accent-color);
     border-radius: 50%;
     display: inline-block;
     animation: typing-dot 1.4s infinite ease-in-out both;
@@ -556,6 +630,29 @@ body {
     animation-delay: 0.4s;
 }
 
+/* Animations */
+@keyframes messageIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes typing-dot {
     0%, 80%, 100% {
         transform: scale(0.8);
@@ -567,55 +664,390 @@ body {
     }
 }
 
-/* Masquer les éléments */
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 280px 1fr;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+    
+    .mobile-language-selector {
+        display: flex !important;
+        padding: 8px 16px;
+        border-bottom: 1px solid var(--border-color);
+        justify-content: center;
+    }
+
+    .chat-container {
+        height: calc(100vh - 32px);
+    }
+}
+
+/* Utility classes */
 .hidden {
     display: none !important;
 }
 
-/* Accordéon pour les instructions d'exercice */
-.instruction-list.collapsed {
-    max-height: 120px;
-    overflow: hidden;
+/* Font loading styling */
+html:not(.fonts-loaded) * {
+    opacity: 0.99;
+}
+
+html.fonts-loaded * {
+    transition: opacity 0.1s ease-in;
+    opacity: 1;
+}
+
+html.fonts-fallback * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Inside style.css */
+
+/* Voice Button */
+.voice-button {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s ease;
+}
+
+.voice-button:hover {
+    color: var(--accent-color);
+}
+
+.voice-button.recording {
+    color: var(--danger-color);
+}
+
+/* Listening Indicator */
+.listening-indicator {
+    position: absolute;
+    bottom: 70px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    background: rgba(32, 170, 150, 0.1);
+    border-radius: 8px;
+}
+
+.listening-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    animation: listeningPulse 1.5s infinite ease-in-out;
+}
+
+.listening-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.listening-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes listeningPulse {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Adjust input container for voice button */
+.input-container {
     position: relative;
 }
 
-.instruction-list.collapsed::after {
+.chat-input input {
+    padding-right: 40px; /* Make room for the voice button */
+}
+
+
+/* Add these styles to the end of your existing style.css file */
+
+/* Emotion Dashboard Styles */
+.emotion-dashboard {
+    background: rgba(63, 60, 100, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.emotion-dashboard h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.emotion-display {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+#emotion-icon {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(32, 170, 150, 0.1);
+    border-radius: 50%;
+}
+
+#emotion-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    flex-grow: 1;
+}
+
+.emotion-camera-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.toggle-slider:before {
+    position: absolute;
     content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+    background-color: var(--accent-color);
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(20px);
+}
+
+/* Webcam Container Styles */
+#video-container {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    background: #000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#webcam {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.emotion-preview {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40px;
-    background: linear-gradient(transparent, var(--secondary-color));
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.expand-btn {
-    margin-top: 10px;
-    background: none;
+#live-emotion {
+    font-weight: 500;
+    padding: 4px 8px;
+    background: rgba(32, 170, 150, 0.3);
+    border-radius: 4px;
+}
+
+/* Emotion Capture Button */
+.emotion-button {
+    background: transparent;
     border: none;
-    color: var(--primary-color);
+    color: var(--text-primary);
+    padding: 8px;
     cursor: pointer;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s ease;
+}
+
+.emotion-button:hover {
+    color: var(--accent-tertiary);
+}
+
+/* Emotion Badges */
+.emotion-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 8px;
+}
+
+.emotion-badge-happy {
+    background-color: var(--accent-secondary);
+}
+
+.emotion-badge-sad {
+    background-color: var(--primary-dark);
+}
+
+.emotion-badge-angry {
+    background-color: var(--danger-color);
+}
+
+.emotion-badge-neutral {
+    background-color: var(--text-secondary);
+}
+
+.emotion-badge-surprised {
+    background-color: var(--accent-tertiary);
+}
+
+.emotion-badge-fearful {
+    background-color: var(--warning-color);
+}
+
+.emotion-badge-disgusted {
+    background-color: var(--primary-color);
+}
+
+/* Emotion Icons */
+.emotion-icon-happy::before {
+    content: "\f118"; /* fa-smile */
+}
+
+.emotion-icon-sad::before {
+    content: "\f119"; /* fa-frown */
+}
+
+.emotion-icon-angry::before {
+    content: "\f556"; /* fa-angry */
+}
+
+.emotion-icon-neutral::before {
+    content: "\f11a"; /* fa-meh */
+}
+
+.emotion-icon-surprised::before {
+    content: "\f5b8"; /* fa-surprise */
+}
+
+.emotion-icon-fearful::before {
+    content: "\f6e3"; /* fa-grimace */
+}
+
+.emotion-icon-disgusted::before {
+    content: "\f7f8"; /* fa-dizzy */
+}
+
+/* Update input container padding for multiple buttons */
+.input-container {
+    position: relative;
+}
+
+.chat-input input {
+    padding-right: 80px; /* Make room for both voice and emotion buttons */
+}
+
+/* Emotion analysis widget in messages */
+.emotion-analysis-widget {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.emotion-confidence {
+    background: rgba(63, 60, 100, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
     font-weight: 500;
 }
 
-/* Améliorations pour les éléments d'exercice */
-.exercise-section {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+/* Animations for emotions */
+@keyframes emotionPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-[data-theme="dark"] .exercise-section {
-    background: var(--secondary-color);
+.emotion-pulse {
+    animation: emotionPulse 1s ease-in-out;
 }
-
-.generation-options {
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: center;
-}
-
-

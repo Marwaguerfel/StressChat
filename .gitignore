@@ -3,3 +3,8 @@ key.py
 
 # Ignorer le modèle pour Git
 best_model.pt
+
+.env
+
+
+**pycache**
